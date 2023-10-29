@@ -167,7 +167,7 @@ class App extends Component {
           </button>
         </form>
         <div className="container">
-          <p className="tags-heading">Tags</p>
+          <h1 className="tags-heading">Tags</h1>
           <ul className="ul-container">
             {newList.map(each => (
               <TagItem
@@ -178,7 +178,7 @@ class App extends Component {
             ))}
           </ul>
 
-          <p className="tags-heading">Tasks</p>
+          <h1 className="tags-heading">Tasks</h1>
           <ul className="tasks-container">
             {filteredList.length === 0 ? (
               <div className="no-task-para">
