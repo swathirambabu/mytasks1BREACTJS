@@ -136,6 +136,7 @@ class App extends Component {
               Task
             </label>
             <input
+              type="text"
               placeholder="Enter the task here"
               id="task"
               className="input"
@@ -146,7 +147,7 @@ class App extends Component {
 
           <div className="input-container">
             <label htmlFor="tags" className="label">
-              Task
+              Tags
             </label>
             <select
               id="tags"
