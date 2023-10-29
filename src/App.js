@@ -153,7 +153,7 @@ class App extends Component {
               id="tags"
               className="input"
               value={tag}
-              onChange={this.onChangeTag}
+              onChange={this.onChangeSelect}
             >
               {tagsList.map(each => (
                 <option key={each.option} value={each.optionId}>
