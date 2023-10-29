@@ -85,7 +85,7 @@ class App extends Component {
       const filteredList = newList.map(item => {
         if (item.optionId === each) {
           return {...item, isTrue: true}
-        },
+        }
         return {...item, isTrue: false}
       })
       console.log(filteredList)
@@ -107,6 +107,7 @@ class App extends Component {
     event.preventDefault()
     const {tag, task} = this.state
     if (task === '') {
+      // eslint-disable-next-line
       alert('Enter the task')
     } else {
       const taskValue = {
