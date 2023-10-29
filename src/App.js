@@ -78,22 +78,22 @@ class App extends Component {
     this.setState({task: event.target.value})
   }
 
-  onClickTagButton = each => {
+  onClickTagButton = button => {
     const {newList} = this.state
-    const findItem = newList.find(item => item.optionId === each)
+    const findItem = newList.find(item => item.optionId === button)
     if (findItem.isTrue === false) {
       const filteredList = newList.map(item => {
-        if (item.optionId === each) {
+        if (item.optionId === button) {
           return {...item, isTrue: true}
         }
         return {...item, isTrue: false}
       })
       console.log(filteredList)
-      this.setState({newList: filteredList, selectTag: each})
+      this.setState({newList: filteredList, selectTag: button})
     }
     if (findItem.isTrue === true) {
       const filteredList = newList.map(item => {
-        if (item.optionId === each) {
+        if (item.optionId === button) {
           return {...item, isTrue: false}
         }
         return item
@@ -177,6 +177,7 @@ class App extends Component {
               />
             ))}
           </ul>
+
           <h1 className="tags-heading">Tasks</h1>
           <ul className="tasks-container">
             {filteredList.length === 0 ? (
