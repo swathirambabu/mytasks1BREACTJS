@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.bg-container {
+  height: 100vh;
+  display: flex;
+}
+.form-container {
+  width: 550px;
+  height: 100vh;
+  padding: 40px;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1a171d;
+}
+.heading {
+  color: #f3aa4e;
+  font-family: roboto;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+.input-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.label {
+  font-family: roboto;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #f1f5f9;
+}
+.input {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  padding-left: 15px;
+  border: 0px;
+  margin-top: 15px;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+  color: #131213;
+}
+.button {
+  width: 150px;
+  height: 40px;
+  font-family: roboto;
+  font-size: 15px;
+  font-weight: 500;
+  color: #f8f8f8;
+  background-color: #f3aa4e;
+  border: 0px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #131213;
+  padding: 15px;
+  padding-top: 80px;
+}
+.heading {
+  font-family: roboto;
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 15px;
+}
+.ul-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 0px;
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+.tag-button {
+  border: 1px solid #f3aa4e;
+  height: 30px;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  margin-right: 30px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.bg-button {
+  border: 1px solid #f3aa4e;
+  height: 30px;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  margin-right: 30px;
+  background-color: #f3aa4e;
+  cursor: pointer;
+}
+.tasks-container {
+  width: 100%;
+  padding-left: 0px;
+  list-style-type: none;
+}
+.task-list-item {
+  width: 100%;
+  height: 70px;
+  background-color: #1a171d;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  justify-content: space-between;
+}
+.task-para {
+  font-family: roboto;
+  font-size: 25px;
+  font-weight: 500;
+  color: #f8f8f8;
+}
+.tag-para {
+  height: 35px;
+  border-radius: 20px;
+  padding: 10px;
+  color: #323f4b;
+  margin-right: 30px;
+  background-color: #f3aa4e;
+  font-family: roboto;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.no-task-para {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.no-task-para {
+  font-family: roboto;
+  font-size: 30px;
+  font-weight: 500;
+  color: #f8f8f8;
+}
